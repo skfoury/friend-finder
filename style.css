@@ -1,0 +1,9 @@
+body {
+    background-image: url("clouds.jpg");
+    text-align: center;
+}
+h1 {
+    font-size: 28px;
+    color: aquamarine;
+    text-shadow: 2px 2px #000000;
+}

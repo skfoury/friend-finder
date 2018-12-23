@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="friendslist.js"></script>
+  <script src="server.js"></script>
+</head>
+
+<body>
+  <h3>Name (Required)</h3>
+  <input type="text" id="name">
+
+  <h3>Question 1: </h3>
+  <select class="chosen-select" id="question1">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <h3>Question 2: </h3>
+  <select class="chosen-select" id="question2">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <h3>Question 3: </h3>
+  <select class="chosen-select" id="question3">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <h3>Question 4: </h3>
+  <select class="chosen-select" id="question4">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <h3>Question 5: </h3>
+  <select class="chosen-select" id="question5">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <h3>Question 6: </h3>
+  <select class="chosen-select" id="question6">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <h3>Question 7: </h3>
+  <select class="chosen-select" id="question7">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <h3>Question 8: </h3>
+  <select class="chosen-select" id="question8">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <h3>Question 9: </h3>
+  <select class="chosen-select" id="question9">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <h3>Question 10: </h3>
+  <select class="chosen-select" id="question10">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+    Submit</button>
+  <script>
+    $("#submit").on("click", function (event) {
+      var userData = {
+        name: $("#name").val(),
+        scores: [
+          $("#question1").val(),
+          $("#question2").val(),
+          $("#question3").val(),
+          $("#question4").val(),
+          $("#question5").val(),
+          $("#question6").val(),
+          $("#question7").val(),
+          $("#question8").val(),
+          $("#question9").val(),
+          $("#question10").val()
+        ]
+      };
+      console.log(userData);
+      $(friendslist).append(userData);
+      console.log(friendslist);
+    });
+  </script>
+</body>
+
+</html>
